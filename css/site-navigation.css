@@ -1,0 +1,38 @@
+/* Shared glass navigation. Scoped to preserve each page's content styles. */
+header.glass-site-header{position:fixed;inset:16px 0 auto;width:100%;z-index:100000;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;transition:none;color:#fff}
+.glass-site-header *{box-sizing:border-box}
+.glass-site-header .glass-navigation{position:relative;width:96%;max-width:1600px;min-height:78px;margin:0 auto;padding:9px 24px;display:flex;align-items:center;gap:26px;border:1px solid rgba(105,192,249,.45);border-radius:22px;background:rgba(5,15,30,.42);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 #ffffff1f,0 12px 35px #0004;font-family:'Roboto',Arial,sans-serif}
+.glass-site-header .glass-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;color:#fff;text-decoration:none}
+.glass-site-header .glass-brand-mark{display:block;width:72px;height:58px;flex-shrink:0}
+.glass-site-header .glass-brand-name{display:block;font-family:'Lora',Georgia,serif;font-size:32px;font-weight:400;line-height:1.15;letter-spacing:-.7px;color:#fff}
+.glass-site-header .glass-brand-tagline{display:block;text-align:right;font-size:12px;font-style:italic;letter-spacing:.3px;line-height:1.5;color:#fff}
+.glass-site-header .glass-nav-links{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-left:auto}
+.glass-site-header .glass-nav-links a{position:relative;color:#fff;text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap;padding:12px 0;line-height:1.4}
+.glass-site-header .glass-nav-links a.is-current:after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:#efc653}
+.glass-site-header .glass-nav-links a:hover{color:#efc653}
+.glass-site-header .glass-nav-tools{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.glass-site-header button{cursor:pointer;font:inherit;color:#fff}
+.glass-site-header .glass-search-toggle{display:grid;place-items:center;width:35px;height:35px;background:#c2dcff40;border:0;border-radius:50%;padding:7px}
+.glass-site-header .glass-search-toggle svg{width:22px;height:22px}
+.glass-site-header .glass-menu-toggle{display:flex;flex-direction:column;gap:5px;padding:8px 0;background:none;border:0}
+.glass-site-header .glass-menu-toggle span{display:block;width:23px;height:2px;background:#fff}
+.glass-site-header .glass-site-search{position:absolute;top:calc(100% + 12px);right:0;width:min(360px,94vw);padding:20px;border:1px solid #6dc5ff88;border-radius:16px;background:#062340ed;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 12px 30px #0005}
+.glass-site-header .glass-site-search[hidden]{display:none}
+.glass-site-header .glass-site-search label{display:block;font-size:14px;margin-bottom:10px}
+.glass-site-header .glass-site-search input{width:100%;padding:11px 13px;border:1px solid #aadfff66;border-radius:10px;color:white;background:#ffffff12;font:inherit;font-size:14px}
+.glass-site-header .glass-site-search input::placeholder{color:#c4def9}
+.glass-site-header .glass-search-results{display:grid;gap:2px;margin-top:10px}
+.glass-site-header .glass-search-results a{color:white;font-size:14px;padding:8px 6px;border-radius:6px;text-decoration:none}
+.glass-site-header .glass-search-results a:hover{background:#ffffff15}
+.glass-site-header .glass-search-empty{font-size:14px;margin:12px 0 0}
+.glass-site-header a:focus-visible,.glass-site-header button:focus-visible,.glass-site-header input:focus-visible{outline:2px solid #efc653;outline-offset:4px}
+.with-glass-header{padding-top:110px}
+@media(min-width:901px){.glass-site-header .glass-nav-links.is-open{position:absolute;right:0;top:calc(100% + 12px);display:grid;grid-template-columns:repeat(3,1fr);gap:8px 25px;padding:20px 30px;background:#062340ed;border:1px solid #6dc5ff88;border-radius:16px;box-shadow:0 12px 30px #0005}}
+@media(max-width:1200px){.glass-site-header .glass-navigation{gap:18px;padding:8px 20px;min-height:68px}.glass-site-header .glass-brand-mark{width:58px;height:48px}.glass-site-header .glass-brand-name{font-size:27px}.glass-site-header .glass-brand-tagline{font-size:10px}.glass-site-header .glass-nav-links{gap:16px}.glass-site-header .glass-nav-links a{font-size:12px}.glass-site-header .glass-nav-tools{gap:10px}.glass-site-header .glass-search-toggle{width:30px;height:30px}}
+@media(max-width:1050px){.glass-site-header .glass-navigation{gap:13px;padding:8px 16px}.glass-site-header .glass-brand{gap:8px}.glass-site-header .glass-brand-name{font-size:24px}.glass-site-header .glass-brand-mark{width:52px}.glass-site-header .glass-nav-links{gap:13px}.glass-site-header .glass-nav-links a{font-size:11px}}
+@media(max-width:900px){header.glass-site-header{top:12px}.glass-site-header .glass-nav-tools{margin-left:auto}.glass-site-header .glass-nav-links{display:none;position:absolute;top:calc(100% + 12px);left:0;right:0;margin:0;padding:20px 25px;border-radius:16px;background:#062340f5;border:1px solid #6dc5ff88;box-shadow:0 12px 30px #0005;max-height:70vh;overflow:auto}.glass-site-header .glass-nav-links.is-open{display:grid;grid-template-columns:1fr 1fr;gap:10px 25px}.glass-site-header .glass-nav-links a{font-size:16px;white-space:normal}.glass-site-header .glass-brand-name{font-size:28px}.glass-site-header .glass-brand-mark{width:60px}.glass-site-header .glass-brand-tagline{font-size:11px}}
+@media(max-width:480px){.glass-site-header .glass-navigation{width:94%;padding:8px 12px;border-radius:17px;gap:10px}.glass-site-header .glass-brand-name{font-size:23px}.glass-site-header .glass-brand-mark{width:45px;height:43px}.glass-site-header .glass-brand-tagline{font-size:9px}.glass-site-header .glass-nav-tools{gap:12px}.glass-site-header .glass-nav-links a{font-size:14px}}
+@supports not ((backdrop-filter:blur(10px)) or (-webkit-backdrop-filter:blur(10px))){.glass-site-header .glass-navigation{background:rgba(5,15,30,.88)}}
+
+.glass-site-header .glass-cart-link{display:grid;place-items:center;color:white;width:25px;height:30px}.glass-site-header .glass-cart-link svg{width:23px;height:23px}
+@media(min-width:901px) and (max-width:1100px){.glass-site-header .glass-nav-links{gap:10px}.glass-site-header .glass-nav-tools{gap:8px}.glass-site-header .glass-navigation{gap:10px;padding-left:12px;padding-right:12px}.glass-site-header .glass-brand-name{font-size:23px}}

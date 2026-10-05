@@ -1,0 +1,176 @@
+.bible-page{color:#fff;background:linear-gradient(#0529508c,#001f3bc9),url('../images/bible-study-background.jpg') center/cover fixed;font-family:'Roboto',Arial,sans-serif}.study-header{position:absolute;top:19px;width:100%;z-index:10}.study-header .navigation{width:94%;min-height:64px;border:1px solid #63b6f6;border-radius:19px;background:linear-gradient(110deg,#00559a85,#5389d246);box-shadow:inset 0 0 12px #57b3ff50,0 4px 15px #00294b45;backdrop-filter:blur(12px);padding:5px 15px 5px 35px;gap:22px}.study-header .brand-mark{width:62px;height:50px}.study-header .brand-name{font-size:27px;letter-spacing:-.5px}.study-header .brand-tagline{font-size:11px}.study-header .nav-links{gap:22px;margin-left:auto}.study-header .nav-links a{font-size:10px;padding:12px 0}.nav-tools{display:flex;align-items:center;gap:10px}.nav-search{border:0;border-radius:50%;width:29px;height:29px;background:#c2dcff50;color:white;display:grid;place-items:center;cursor:pointer}.nav-search .icon{width:19px;height:19px}.study-header .menu-toggle{display:flex;padding:0;gap:5px;background:none;border:0;cursor:pointer}.study-header .menu-toggle span{width:17px;height:1.5px;background:white}.study-hero{min-height:480px;background:transparent;position:relative;padding-top:110px}.breadcrumbs{display:flex;align-items:center;gap:10px;font-size:12px;margin-bottom:37px}.breadcrumbs .icon{width:16px;height:16px}.breadcrumbs>.icon:nth-of-type(2){width:12px}.study-hero-layout{display:grid;grid-template-columns:1fr 240px;gap:40px;align-items:start;padding-left:15px}.study-hero .eyebrow{font-size:13px;letter-spacing:.7px;margin-bottom:5px;color:#ffd34b}.study-hero h1{font-family:var(--serif);font-size:51px;letter-spacing:-1px;line-height:1.2;margin:0 0 15px}.hero-description{font-size:15px;line-height:1.35;margin:0 0 21px}.glass-button{color:white;border:1px solid #c1e8ff;background:linear-gradient(110deg,#0047799c,#518fe0a6);box-shadow:inset 0 0 9px #3eaaff60,0 0 6px #3eaaff80;padding:12px 22px;font-size:12px;gap:14px}.button-divider{height:21px;width:1px;background:#ffffff30}.hero-quote{margin:0;padding:20px 18px 22px 31px;border-radius:18px 0 0 18px;background:linear-gradient(135deg,#bed0eb70,#00385b94);border:1px solid #b5d0e76e;backdrop-filter:blur(14px);position:relative}.hero-quote:before{content:'';position:absolute;left:16px;top:19px;bottom:19px;width:2px;background:#ffda63}.hero-quote p{font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.35;margin:0 0 16px}.hero-quote cite{font-size:12px;font-style:normal;color:#ffda63}.study-body{padding:19px 0 18px;border-top:1px solid #a2c5e65c;background:linear-gradient(110deg,#012b5699,#0c355a6b,transparent);backdrop-filter:blur(9px)}.studies-layout{display:grid;grid-template-columns:minmax(0,1fr) 254px;gap:25px}.categories{padding-top:12px}.categories>.eyebrow{font-size:13px;color:#ffda4d;letter-spacing:.7px;margin-bottom:4px}.categories h2{font-family:var(--serif);font-size:33px;letter-spacing:-.8px;margin:0 0 9px}.categories-intro{font-size:15px;line-height:1.4;margin:0 0 21px}.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.category-card{min-height:263px;position:relative;text-align:left;color:white;border:1px solid #53bafa;border-radius:12px;padding:73px 18px 15px;overflow:hidden;background:linear-gradient(180deg,transparent 0%,#002b4770 35%,#002446f2 65%,#00264cee),var(--card-image) center/cover;box-shadow:0 4px 15px #0003;cursor:pointer;transition:transform .2s,border-color .2s;display:flex;flex-direction:column;align-items:flex-start;font:inherit}.category-card:hover{transform:translateY(-3px);border-color:#ffe074}.category-icon{width:51px;height:51px;border-radius:50%;border:1.5px solid #bdeaff;display:grid;place-items:center;background:linear-gradient(145deg,#b0bfd18c,#07376dae);box-shadow:inset 0 0 12px #37a9ff70,0 0 6px #9ed8ff30;margin-bottom:11px}.category-icon .icon{width:27px;height:27px}.category-card h3{font-size:18px;font-weight:700;letter-spacing:-.4px;margin:0 0 10px;line-height:1.15}.category-card p{font-size:12px;line-height:1.45;margin:0 0 11px}.view-studies{display:flex;align-items:center;gap:13px;font-size:12px;color:#ffdc61;margin-top:auto}.view-studies .icon{color:white;width:20px;height:20px}.study-sidebar{padding:15px 14px 14px;border:1px solid #6bb7e485;border-radius:20px;background:linear-gradient(135deg,#789fd444,#0033539c);box-shadow:0 9px 22px #0005;align-self:start}.study-search{display:flex;align-items:center;gap:10px;padding:9px 13px;border:1px solid #8dd4ff55;border-radius:17px;background:#9ac0f026}.study-search .icon{width:17px;height:17px}.study-search input{color:white;background:none;border:0;outline:0;font:inherit;font-size:11px;width:100%;min-width:0}.study-search:focus-within{outline:2px solid #ffd866;outline-offset:2px}.study-search input::placeholder{color:#c4def9}.sidebar-label{font-size:11px;letter-spacing:.6px;margin:17px 0 9px;color:#ffdc5c}.quick-links{display:grid;gap:5px}.quick-link{display:flex;align-items:center;color:white;font:inherit;font-size:11px;gap:9px;border:1px solid #97d4f433;border-radius:25px;padding:3px 10px 3px 5px;background:#d2e6fa12;cursor:pointer;text-align:left;min-height:33px}.quick-link:hover{background:#73b7ff40}.quick-link>.icon:first-child{width:28px;height:28px;background:#2d61937d;border-radius:50%;padding:6px}.quick-link>.icon:last-child{margin-left:auto;width:17px;height:17px}.video-panel{margin-top:20px;min-height:207px;border-radius:12px;border:1px solid #79ceff;position:relative;overflow:hidden;padding:44px 25px 12px;background:linear-gradient(180deg,#042d5940,#002748ed 55%),url('../images/home-mission.png') center/cover}.video-play{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#075397;border:1px solid #89d4ff;margin:0 auto 9px}.video-play .icon{width:24px}.video-panel h3{font-family:var(--serif);font-size:16px;margin:0 0 7px;white-space:nowrap}.video-panel p{font-size:12px;line-height:1.45;margin:0 0 12px}.video-panel .button{padding:8px 21px;font-size:11px;gap:15px;white-space:nowrap}.verse-panel{padding:13px 16px 9px;border:1px solid #83d7ff;border-radius:14px;margin-top:15px;background:linear-gradient(135deg,#00537270,#001b41a3)}.verse-panel .eyebrow{font-size:10px;color:#ffdb5c;letter-spacing:.4px}.verse-panel blockquote{font-family:var(--serif);font-style:italic;font-size:14px;line-height:1.4;margin:15px 0 9px 30px}.verse-reference{font-size:11px;color:#ffda53;margin:0 0 8px 30px}.verse-rule{display:block;width:26px;height:1px;background:#f9d25e;margin-left:30px}.featured-study{position:relative;min-height:197px;overflow:hidden;border:1px solid #5bbaff;border-radius:14px;margin-top:23px;padding:24px 33px 18px;background:linear-gradient(90deg,#002b65cc,transparent 80%),url('../images/bible-jesus.png') center/cover;box-shadow:0 8px 20px #0003}.feature-label{display:inline-block;font-size:10px;text-transform:uppercase;font-weight:700;color:#062345;background:#ffdc69;border-radius:20px;padding:5px 14px}.featured-study h2{font-family:var(--serif);font-size:34px;margin:5px 0}.featured-study p{font-size:14px;line-height:1.4;margin:0 0 10px}.featured-study .button{font-size:12px;padding:8px 28px;color:#ffdf65;gap:28px}.slider-dots{position:absolute;bottom:17px;left:50%;transform:translateX(-50%);display:flex;gap:10px}.slider-dots button{padding:0;width:10px;height:10px;border-radius:50%;border:1px solid #52a8e8;background:#0c335b;cursor:pointer}.slider-dots button.selected{background:#fbd05c;border-color:#fbd05c}.slider-arrows{position:absolute;right:16px;bottom:15px;display:flex;gap:10px}.slider-arrows button{color:white;border-radius:50%;width:28px;height:28px;border:1px solid #66b9f2;background:#4684b840;display:grid;place-items:center;cursor:pointer}.slider-arrows .icon{width:18px;height:18px}#previous-study .icon{transform:rotate(180deg)}.bible-page .site-footer{padding:14px 0 24px;background:#001f3deb;border-top:1px solid #80aecd55}.bible-page .footer-top{padding-bottom:14px}.bible-page .footer-links{gap:20px;font-size:9px}.bible-page .site-footer .brand-name{font-size:24px}.bible-page .site-footer .brand-mark{width:59px;height:45px}.bible-page .site-footer .brand-tagline{font-size:9px}.bible-page .footer-bottom{font-size:9px;padding-top:9px}.bible-page .footer-bottom p:last-child{top:9px}.bible-page .social-links a{width:22px;height:22px;font-size:18px}.bible-page .social-links{gap:13px}.bible-page .social-links svg{width:18px;height:18px}.bible-page .facebook{font-size:22px}.lesson-dialog{width:min(650px,90vw);max-height:85vh;color:#fff;background:#06315a;border:1px solid #76c9ff;border-radius:18px;padding:35px;box-shadow:0 20px 80px #0008}.lesson-dialog::backdrop{background:#001527b3;backdrop-filter:blur(5px)}.lesson-dialog h2{font-family:var(--serif);font-size:30px;margin:10px 0 20px}.lesson-dialog h3{color:#ffda63;font-size:17px}.lesson-dialog p,.lesson-dialog li{font-size:15px;line-height:1.65}.lesson-dialog .button{margin-top:20px}.dialog-close{position:absolute;right:12px;top:8px;font-size:30px;border:0;background:none;color:white;cursor:pointer}.no-results{padding:25px;background:#00264b9c;border-radius:10px}.category-card[hidden]{display:none}.study-body{scroll-margin-top:20px}
+@media(min-width:1200px){.study-header .navigation{min-height:85px;padding:10px 35px}.study-header .brand-name{font-size:35px}.study-header .brand-mark{width:80px;height:65px}.study-header .nav-links a{font-size:14px}.study-header .nav-links{gap:28px}.study-hero{min-height:650px;padding-top:140px}.breadcrumbs{font-size:16px;margin-bottom:55px}.study-hero-layout{grid-template-columns:1fr 320px}.study-hero h1{font-size:70px}.hero-description{font-size:20px}.hero-quote p{font-size:24px}.hero-quote cite{font-size:16px}.study-hero .eyebrow{font-size:17px}.glass-button{font-size:16px;padding:16px 30px}.studies-layout{grid-template-columns:minmax(0,1fr) 330px;gap:35px}.category-card{min-height:340px;padding:100px 24px 22px}.category-card h3{font-size:24px}.category-card p{font-size:16px}.view-studies{font-size:16px}.category-icon{width:64px;height:64px}.categories h2{font-size:44px}.categories-intro{font-size:20px}.category-grid{gap:22px}.study-sidebar{padding:22px}.quick-link{font-size:14px;min-height:44px}.study-search input{font-size:14px}.video-panel{min-height:270px;padding-top:65px}.video-panel h3{font-size:20px}.video-panel p{font-size:16px}.verse-panel blockquote{font-size:19px}.verse-panel{padding:20px}.featured-study{min-height:260px;padding:30px 45px}.featured-study h2{font-size:45px}.featured-study p{font-size:18px}.bible-page .footer-links{font-size:12px}}
+@media(min-width:901px){.study-header .nav-links.is-open{position:absolute;display:grid;grid-template-columns:repeat(3,1fr);top:calc(100% + 10px);right:3%;padding:20px 30px;background:#062e54f2;border:1px solid #6dc5ff;border-radius:15px;min-width:440px}.study-header .nav-links.is-open a{font-size:14px}}
+@media(max-width:900px){.study-header .navigation{padding:8px 20px}.study-header .nav-links{margin:0;top:76px}.study-hero{min-height:510px}.study-hero-layout{grid-template-columns:1fr 210px;gap:20px;padding-left:0}.study-hero h1{font-size:43px}.hero-quote p{font-size:16px}.studies-layout{grid-template-columns:minmax(0,1fr) 220px;gap:20px}.category-grid{grid-template-columns:repeat(2,1fr)}.categories-intro{font-size:14px}.category-card{min-height:265px}.study-sidebar{padding:12px}.video-panel{padding-left:15px;padding-right:15px}.video-panel h3{font-size:14px}.verse-panel blockquote{margin-left:10px}.verse-reference,.verse-rule{margin-left:10px}.bible-page .footer-links{font-size:11px;gap:17px}.bible-page .footer-bottom p:last-child{position:static}}
+@media(max-width:600px){.study-header{top:12px}.study-header .navigation{width:94%;padding:8px 12px;gap:10px;border-radius:15px}.study-header .brand-mark{width:45px;height:43px}.study-header .brand-name{font-size:23px}.study-header .brand-tagline{font-size:9px}.study-header .nav-links{left:3%;right:3%}.study-hero{min-height:610px;padding-top:110px;background-position:45% center}.breadcrumbs{margin-bottom:28px}.study-hero-layout{grid-template-columns:1fr;gap:23px}.study-hero h1{font-size:40px}.hero-description{max-width:300px;font-size:16px;line-height:1.5}.hero-quote{max-width:270px;border-radius:14px;padding:13px 18px 13px 31px}.hero-quote p{font-size:16px;margin-bottom:10px}.hero-quote p br{display:none}.studies-layout{grid-template-columns:1fr}.study-body{padding-top:20px;backdrop-filter:blur(5px)}.categories h2{font-size:30px}.categories-intro{font-size:15px}.category-grid{gap:14px}.category-card{padding:68px 14px 15px;min-height:280px}.category-card h3{font-size:18px}.category-card p{font-size:13px}.category-icon{width:46px;height:46px}.study-sidebar{padding:18px}.study-search input{font-size:14px}.quick-link{font-size:14px;min-height:40px}.video-panel{padding:30px 22px 22px}.video-panel h3{font-size:21px}.video-panel p{font-size:15px}.verse-panel blockquote{font-size:18px}.verse-panel .eyebrow{font-size:12px}.verse-reference{font-size:13px}.featured-study{min-height:290px;padding:24px;background-position:65% center}.featured-study h2{font-size:32px}.featured-study p{font-size:15px;max-width:290px}.slider-dots{bottom:16px;left:30%;}.bible-page .footer-top{justify-content:space-between}.bible-page .site-footer .brand-name{font-size:23px}}
+
+/* Clear glass surfaces, matching the About page's dark translucent panels. */
+.bible-page {
+    --study-glass: rgba(5, 15, 30, .42);
+    --study-glass-border: rgba(79, 195, 255, .3);
+    --study-glass-shadow: 0 15px 45px rgba(0, 0, 0, .35);
+    background-image: linear-gradient(rgba(0, 8, 18, .28), rgba(0, 18, 35, .3)), url('../images/bible-study-background.jpg');
+}
+
+.bible-page .study-body {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.study-header .navigation,
+.hero-quote,
+.categories,
+.study-sidebar,
+.verse-panel {
+    background: var(--study-glass);
+    border: 1px solid var(--study-glass-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), var(--study-glass-shadow);
+}
+
+.categories {
+    padding: 24px;
+    border-radius: 22px;
+}
+
+.categories-intro {
+    color: #e5eff9;
+    line-height: 1.6;
+}
+
+.categories-intro .desktop-break {
+    display: none;
+}
+
+.study-sidebar {
+    border-radius: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero-quote {
+    border-radius: 18px;
+}
+
+.category-card {
+    border-color: rgba(121, 202, 255, .42);
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, rgba(0, 18, 35, .04), rgba(0, 18, 35, .2) 45%, rgba(0, 18, 35, .6)), var(--card-image);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 8px 24px rgba(0, 0, 0, .3);
+    isolation: isolate;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    inset: 43% 0 0;
+    z-index: -1;
+    background: linear-gradient(rgba(5, 15, 30, .42), rgba(5, 15, 30, .78));
+    border-top: 1px solid rgba(255, 255, 255, .13);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    pointer-events: none;
+}
+
+.category-card p {
+    color: #edf4fb;
+    line-height: 1.55;
+}
+
+.category-card:hover {
+    border-color: rgba(154, 220, 255, .8);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 12px 30px rgba(0, 0, 0, .4);
+}
+
+.category-icon,
+.study-search,
+.quick-link,
+.glass-button {
+    background: rgba(153, 199, 237, .14);
+    border-color: rgba(173, 222, 255, .35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12);
+}
+
+.quick-links {
+    gap: 8px;
+}
+
+.quick-link:hover,
+.glass-button:hover {
+    background: rgba(153, 199, 237, .25);
+    border-color: rgba(173, 222, 255, .65);
+}
+
+.verse-panel {
+    border-radius: 16px;
+}
+
+.video-panel,
+.featured-study {
+    border-color: rgba(121, 202, 255, .42);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), var(--study-glass-shadow);
+}
+
+@supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+    .study-header .navigation,
+    .hero-quote,
+    .categories,
+    .study-sidebar,
+    .verse-panel {
+        background: rgba(5, 15, 30, .85);
+    }
+    .category-card::before {
+        background: rgba(5, 15, 30, .85);
+    }
+}
+
+@media (max-width: 900px) {
+    .categories { padding: 20px; }
+}
+
+@media (max-width: 600px) {
+    .categories { padding: 18px 14px; }
+    .category-grid { gap: 12px; }
+    .category-card { padding-left: 12px; padding-right: 12px; }
+    .category-card h3 { font-size: 17px; }
+}
+
+/* Load category photographs directly, independent of CSS URL resolution. */
+.bible-page .category-card {
+    background: linear-gradient(180deg, rgba(0,18,35,.04), rgba(0,18,35,.2) 45%, rgba(0,18,35,.6));
+}
+.category-card .category-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* Keep carousel arrows circular despite the shared button padding. */
+.bible-page .slider-arrows button {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    line-height: 1;
+}
+.bible-page .slider-arrows button .icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}

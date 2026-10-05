@@ -1,0 +1,84 @@
+/* About-page lighting: shade the scenery, keep foreground content clear. */
+:root {
+    --site-shade: linear-gradient(rgba(0, 8, 18, .28), rgba(0, 18, 35, .30));
+    --site-glass: rgba(5, 15, 30, .42);
+    --site-glass-border: rgba(79, 195, 255, .25);
+    --site-base: #010814;
+    --site-text: #efefef;
+}
+body[data-site-page="shop"] { --page-scenery: url('../images/shop-background.jpg'); }
+body[data-site-page="donate"] { --page-scenery: url('../images/donation-background.jpg'); }
+body[data-site-page="contact"] { --page-scenery: url('../images/contact-background.jpg'); }
+body[data-site-page="watch"] { --page-scenery: url('../images/watch-background.jpg'); }
+body[data-site-page="landmarks"] { --page-scenery: url('../images/landmarks-background.jpg'); }
+body[data-site-page="bible-study"] { --page-scenery: url('../images/bible-study-background.jpg'); }
+body[data-site-page]:not([data-site-page="index"]):not([data-site-page="about"]) {
+    background-color: var(--site-base);
+    background-image: var(--site-shade), var(--page-scenery, linear-gradient(#010814, #010814));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--site-text);
+}
+
+/* Glass panels share the About page's tint, blur, and border. */
+body[data-site-page] :is(.product-card, .best-card, .newsletter-box, .donation-card,
+.payment-card, .partner-card, .impact-card, .contact-card, .hours-card,
+.radio-card, .podcast-card, .media-card, .issue-card, .issue-box, .content-card,
+.cart-summary, .order-summary, .success-box) {
+    background: var(--site-glass);
+    border: 1px solid var(--site-glass-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .45);
+    color: var(--site-text);
+}
+
+body[data-site-page="cart"] .cart-hero,
+body[data-site-page="checkout"] .cart-hero {
+    background: transparent;
+}
+
+/* Retain the original light surfaces with a subtle navy-gray tint. */
+body[data-site-page="index"] { background: #e4e8ed; color: #082356; }
+body[data-site-page="index"] .hero {
+    background-image: var(--site-shade), url('../images/home-hero.png');
+}
+body[data-site-page="index"] .resources {
+    background: linear-gradient(120deg, #e3e9f0, #e9edf1, #e1e7ee);
+}
+body[data-site-page="index"] .featured {
+    background: radial-gradient(ellipse at 65% 40%, #e8ecf1, #dae3ed);
+}
+body[data-site-page="index"] .resource-card {
+    background: #e9edf2;
+    color: #082356;
+    border-color: #ced8e3;
+    box-shadow: 0 3px 12px rgba(20, 56, 93, .1);
+}
+body[data-site-page="index"] .resource-card p { color: #24456b; }
+body[data-site-page="index"] .card-icon { border-color: #e9edf2; }
+body[data-site-page="index"] .study-details { color: #082356; }
+body[data-site-page="index"] .study-intro { color: #24456b; }
+
+/* Shade the News page's white paper without changing its original text colors. */
+body[data-site-page="news"] {
+    background-color: #e3e6ea;
+    background-image: none;
+}
+body[data-site-page="news"] :is(.news-header, .newsletter, .news-article, .feature-page,
+.mission-update, .india-section, .books-promo, .media-series, .last-page,
+.contacts-box) {
+    background: linear-gradient(rgba(8, 20, 38, .09), rgba(8, 20, 38, .09)), #fff;
+}
+body[data-site-page="news"] .bottom-ad {
+    background: linear-gradient(rgba(8, 20, 38, .08), rgba(8, 20, 38, .08)), #ededed;
+}
+
+@supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+    body[data-site-page] :is(.product-card, .best-card, .newsletter-box, .donation-card,
+    .payment-card, .partner-card, .impact-card, .contact-card, .hours-card,
+    .radio-card, .podcast-card, .media-card, .issue-card, .issue-box, .content-card,
+    .cart-summary, .order-summary, .success-box) { background: rgba(5, 15, 30, .85); }
+}

@@ -1,0 +1,2197 @@
+/*=========================
+    NEWS HEADER
+=========================*/
+
+.news-header{
+
+    width:100%;
+    background:#fff;
+}
+
+.news-banner{
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+    height: 430px;   /* Reduced from the full image height */
+}
+
+.news-banner img{
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.orange-circle{
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    border-radius:50%;
+
+    background:#f6a133;
+
+    top:-90px;
+    left:70px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:#fff;
+
+    z-index:5;
+}
+
+.newsletter-title{
+
+    font-size:18px;
+    letter-spacing:2px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.orange-circle h1{
+
+    font-size:82px;
+    line-height:1;
+    margin:0;
+    font-weight:300;
+}
+
+.orange-circle h1 span{
+
+    font-weight:800;
+}
+
+.orange-circle h3{
+
+    margin-top:25px;
+    font-size:22px;
+    font-weight:500;
+}
+
+.social-icons{
+
+    margin-top:50px;
+}
+
+.social-icons a{
+
+    color:white;
+    font-size:40px;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+.verse-bar{
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#000;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    padding:10px 40px;
+
+    gap:20px;
+
+    font-size:22px;
+}
+
+.verse-bar em{
+
+    font-size:16px;
+    font-style:italic;
+}
+
+/*=========================
+    NEWS SECTION
+=========================*/
+
+.newsletter{
+
+    background:#ffffff;
+
+    padding:120px 8%;
+
+}
+
+.newsletter-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.newsletter-text h1{
+
+    font-size:72px;
+
+    color:#e68b23;
+
+    font-family:Georgia,serif;
+
+    font-style:italic;
+
+    margin-bottom:30px;
+
+}
+
+.newsletter-text p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    color:#333;
+
+    margin-bottom:25px;
+
+    text-align:justify;
+
+}
+
+.newsletter-text p:first-of-type:first-letter{
+
+    float:left;
+
+    font-size:90px;
+
+    line-height:70px;
+
+    color:#f1992d;
+
+    padding-right:10px;
+
+    font-weight:bold;
+
+}
+
+.newsletter-image{
+
+    position:relative;
+
+}
+
+.newsletter-image img{
+
+    width:100%;
+
+    border-radius:50px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.quote{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:-30px;
+
+    width:180px;
+
+    height:180px;
+
+    background:#777;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:18px;
+
+    font-style:italic;
+
+    line-height:1.4;
+
+}
+/*==================================
+        ARTICLE SECTION
+==================================*/
+
+.news-article{
+
+    background:#ffffff;
+
+    padding:80px 70px;
+}
+
+.article-grid{
+
+    max-width:1450px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:260px 1fr 1fr;
+
+    gap:45px;
+
+    align-items:start;
+
+}
+
+.article-sidebar img{
+
+    width:100%;
+
+    border-radius:28px;
+
+    display:block;
+}
+
+.sidebar-caption{
+
+    margin-top:20px;
+
+    color:#8a8a8a;
+
+    font-size:22px;
+
+    line-height:1.45;
+
+}
+
+.article-column{
+
+    column-gap:40px;
+}
+
+.article-column p{
+
+    font-family:Georgia, serif;
+
+    font-size:16px;
+
+    line-height:1.55;
+
+    color:#222;
+
+    text-align:justify;
+
+    margin-bottom:35px;
+
+}
+/*=====================================
+        FEATURE PAGE
+=====================================*/
+
+.feature-page{
+
+    background:#ffffff;
+    padding:80px 70px;
+    color:#222;
+
+}
+
+.feature-layout{
+
+    max-width:1450px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2.2fr 0.9fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+.feature-main{
+
+    padding-right:40px;
+    border-right:1px solid #bbb;
+
+}
+
+.feature-image{
+
+    position:relative;
+    margin-bottom:45px;
+
+}
+
+.feature-image img{
+
+    width:100%;
+    border-radius:30px;
+    display:block;
+
+}
+
+.feature-caption{
+
+    position:absolute;
+    left:30px;
+    bottom:25px;
+
+    width:220px;
+
+    color:#ffffff;
+
+    font-size:28px;
+    font-weight:600;
+    line-height:1.2;
+
+}
+
+.feature-columns{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+
+}
+
+.feature-columns p{
+
+    font-family:Georgia, serif;
+    font-size:16px;
+    line-height:1.65;
+    text-align:justify;
+    margin-bottom:28px;
+
+    color:#222 !important;
+
+}
+
+.author{
+
+    display:flex;
+    align-items:center;
+    margin-top:30px;
+    color:#222;
+
+}
+
+.author img{
+
+    width:85px;
+    height:85px;
+    border-radius:50%;
+    margin-right:20px;
+
+}
+
+.author strong{
+
+    color:#222;
+
+}
+
+.author div{
+
+    color:#444;
+
+}
+
+
+/*==========================
+      SIDEBAR
+==========================*/
+
+.landmarks{
+
+    padding-left:25px;
+    padding-right:10px;
+    color:#222 !important;
+
+    width:100%;
+
+}
+
+.landmarks h4{
+
+    text-align:center;
+    font-size:12px;
+    letter-spacing:2px;
+    margin-bottom:2px;
+    text-transform:uppercase;
+
+    color:#222 !important;
+
+}
+
+.landmarks h2{
+
+    font-size:34px;
+    text-align:center;
+    color:#d88728;
+
+    margin:5px 0;
+
+    font-family:Georgia,serif;
+    font-weight:400;
+
+}
+
+.landmarks h5{
+
+    font-size:14px;
+    text-align:center;
+    font-weight:400;
+    margin-bottom:15px;
+
+    color:#222 !important;
+
+}
+
+.month{
+
+    display:block;
+    text-align:right;
+    color:#d88728 !important;
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.landmarks img{
+
+    width:180px;
+
+    display:block;
+
+    margin:20px auto;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.landmarks p{
+
+    font-family:Georgia, serif;
+    font-size:16px;
+    line-height:1.6;
+    text-align:justify;
+    margin-bottom:30px;
+
+    color:#222 !important;
+
+}
+
+.landmarks em{
+
+    color:#000 !important;
+    font-style:italic;
+
+}
+
+.subscribe-box{
+
+    background:#f8eee2;
+
+    padding:25px;
+    text-align:center;
+    font-size:16px;
+
+    margin-bottom:25px;
+
+    color:#222 !important;
+
+}
+
+.subscribe-box strong{
+
+    color:#d88728 !important;
+
+}
+
+.subscribe-btn{
+
+    display:block;
+
+    background:#f19a2a;
+
+    color:#ffffff !important;
+
+    text-align:center;
+    text-decoration:none;
+
+    padding:16px;
+
+    font-size:16px;
+    font-weight:bold;
+
+}
+
+.subscribe-btn:hover{
+
+    background:#d78218;
+
+}
+/*=====================================================
+        FOREIGN MISSION PROJECT UPDATE
+=====================================================*/
+
+.mission-update{
+
+    background:#ffffff;
+    padding:90px 70px 40px;
+    position:relative;
+    overflow:hidden;
+
+}
+
+/*======================
+      GREY CIRCLE
+=======================*/
+
+.mission-circle{
+
+    position:absolute;
+
+    width:470px;
+    height:470px;
+
+    background:#b8b8b8;
+    border-radius:50%;
+
+    top:-235px;
+    left:60px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding-bottom:60px;
+
+    color:#fff;
+
+}
+
+.mission-circle h4{
+
+    font-size:26px;
+    font-style:italic;
+    margin:0;
+
+}
+
+.mission-circle h2{
+
+    font-size:64px;
+    font-style:italic;
+    margin:5px 0;
+
+}
+
+.mission-circle h3{
+
+    font-size:34px;
+    font-style:italic;
+    margin:0;
+
+}
+
+/*======================
+      MAIN LAYOUT
+=======================*/
+
+.mission-container{
+
+    max-width:1500px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:31% 49% 20%;
+
+    column-gap:30px;
+
+    align-items:start;
+
+}
+
+/*======================
+      LEFT COLUMN
+=======================*/
+
+.country{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-top:120px;
+    margin-bottom:20px;
+
+}
+
+.country img{
+
+    width:32px;
+
+}
+
+.country span{
+
+    font-size:22px;
+    font-weight:700;
+    color:#666;
+
+}
+
+.mission-left h1{
+
+    font-size:70px;
+    color:#ef982d;
+    font-family:Georgia,serif;
+    font-style:italic;
+
+    margin:0 0 15px;
+
+}
+
+.mission-left h5{
+
+    color:#8d8d8d;
+    font-size:24px;
+    margin-bottom:40px;
+
+}
+
+.mission-left h3{
+
+    font-size:34px;
+    margin-bottom:20px;
+
+}
+
+.mission-left p{
+
+    font-family:Georgia,serif;
+    font-size:16px;
+    line-height:1.75;
+    text-align:justify;
+    color:#222;
+    margin-bottom:25px;
+
+}
+
+/*======================
+      CENTER COLUMN
+=======================*/
+
+.country-map{
+
+    text-align:right;
+    margin-bottom:25px;
+
+}
+
+.country-map img{
+
+    width:220px;
+
+}
+
+.main-photo{
+
+    width:100%;
+    border-radius:35px;
+    display:block;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
+
+}
+
+.outreach-box{
+
+    background:#ecd8bb;
+
+    margin-top:40px;
+
+    border-radius:28px;
+
+    padding:35px;
+
+}
+
+.outreach-box h3{
+
+    font-size:20px;
+    margin-bottom:25px;
+
+}
+
+.outreach-box ul{
+
+    padding-left:28px;
+
+}
+
+.outreach-box li{
+
+    font-family:Georgia,serif;
+
+    font-size:20px;
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+/*======================
+      RIGHT COLUMN
+=======================*/
+
+.photo-caption{
+
+    color:#8d8d8d;
+
+    font-size:18px;
+
+    line-height:1.4;
+
+    margin-top:560px;
+    margin-bottom:35px;
+
+}
+
+.mission-right p{
+
+    font-family:Georgia,serif;
+
+    font-size:16px;
+
+    line-height:1.75;
+
+    text-align:justify;
+
+    color:#222;
+
+    margin-bottom:28px;
+
+}
+
+/*======================
+      FOOTER
+=======================*/
+
+.mission-footer{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:90px 180px 1fr;
+
+    align-items:center;
+
+}
+
+.page-number{
+
+    background:#f39c34;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:14px 0;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+.footer-title{
+
+    background:#f39c34;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:14px 0;
+
+    font-size:26px;
+
+    font-weight:700;
+
+}
+
+.footer-date{
+
+    color:#9d9d9d;
+
+    padding-left:30px;
+
+    font-size:24px;
+
+}
+/*=====================================================
+        PART 3 - MAGAZINE FINISHING
+=====================================================*/
+
+/* Magazine page width */
+
+.mission-update{
+
+    max-width:1500px;
+
+    margin:70px auto;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+}
+
+/* Better text rendering */
+
+.mission-update h1,
+.mission-update h2,
+.mission-update h3,
+.mission-update h4,
+.mission-update h5{
+
+    font-family:Georgia, serif;
+
+    font-weight:400;
+
+}
+
+.mission-update p{
+
+    color:#2b2b2b;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+/* Decorative line under title */
+
+.mission-left h3{
+
+    position:relative;
+
+    padding-bottom:15px;
+
+    margin-bottom:30px;
+
+}
+
+.mission-left h3::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:90px;
+
+    height:3px;
+
+    background:#ef982d;
+
+}
+
+/* Photo hover */
+
+.main-photo{
+
+    transition:.4s;
+
+}
+
+.main-photo:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* Sidebar bullets */
+
+.outreach-box ul{
+
+    list-style:square;
+
+}
+
+.outreach-box li::marker{
+
+    color:#ef982d;
+
+}
+
+/* Footer */
+
+.mission-footer{
+
+    border-top:1px solid #ddd;
+
+    padding-top:25px;
+
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+    .mission-container{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+    .mission-circle{
+
+        position:relative;
+
+        width:300px;
+
+        height:300px;
+
+        top:0;
+
+        left:0;
+
+        margin:0 auto 50px;
+
+        padding-bottom:45px;
+
+    }
+
+    .country{
+
+        margin-top:0;
+
+    }
+
+    .photo-caption{
+
+        margin-top:30px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .mission-update{
+
+        padding:40px 20px;
+
+    }
+
+    .mission-left h1{
+
+        font-size:48px;
+
+    }
+
+    .mission-circle{
+
+        width:240px;
+
+        height:240px;
+
+    }
+
+    .mission-circle h2{
+
+        font-size:38px;
+
+    }
+
+    .main-photo{
+
+        border-radius:20px;
+
+    }
+
+    .outreach-box{
+
+        padding:20px;
+
+    }
+
+}
+/*==================================================
+                    INDIA SECTION
+==================================================*/
+
+.india-section{
+    width:100%;
+    background:#ffffff;
+    padding:80px 60px;
+}
+
+/*==========================
+        HEADER
+==========================*/
+
+.india-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:40px;
+}
+
+.india-title{
+    flex:1;
+}
+
+.country{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.country img{
+    width:30px;
+    height:auto;
+}
+
+.country span{
+    font-size:18px;
+    font-weight:700;
+    color:#666;
+}
+
+.india-title h2{
+    margin:0;
+    font-family:Georgia,serif;
+    font-style:italic;
+    font-size:64px;
+    color:#e8932d;
+    font-weight:normal;
+    line-height:1.05;
+}
+
+.india-title h4{
+    margin-top:15px;
+    font-size:18px;
+    font-weight:500;
+    color:#7d7d7d;
+}
+
+.india-map{
+    width:240px;
+    text-align:right;
+}
+
+.india-map img{
+    width:220px;
+    height:auto;
+    display:block;
+    margin-left:auto;
+}
+
+/*==========================
+        MAIN LAYOUT
+==========================*/
+
+.india-layout{
+    display:grid;
+    grid-template-columns:38% 62%;
+    gap:45px;
+    align-items:start;
+}
+
+/*==========================
+        LEFT ARTICLE
+==========================*/
+
+.india-article{
+    width:100%;
+}
+
+.india-article p{
+    display:block;
+    margin:0 0 28px;
+    padding:0;
+
+    color:#222 !important;
+    font-family:Georgia,serif;
+    font-size:18px;
+    line-height:1.75;
+    text-align:justify;
+
+    opacity:1 !important;
+    visibility:visible !important;
+}
+
+.dropcap:first-letter{
+    float:left;
+    font-size:82px;
+    line-height:65px;
+    padding-right:10px;
+    color:#e8932d;
+    font-weight:bold;
+}
+
+/*==========================
+        RIGHT SIDE
+==========================*/
+
+.india-gallery{
+    width:100%;
+}
+
+.india-photo{
+    width:100%;
+    display:block;
+    margin-bottom:22px;
+    border-radius:24px;
+    box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+
+.india-caption{
+    margin-top:10px;
+
+    color:#8b8b8b;
+
+    font-size:17px;
+
+    line-height:1.8;
+}
+
+.india-caption strong{
+    color:#666;
+}
+
+/*==========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:1100px){
+
+    .india-layout{
+        grid-template-columns:1fr;
+    }
+
+    .india-header{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .india-map{
+        width:100%;
+        text-align:center;
+    }
+
+    .india-map img{
+        margin:auto;
+    }
+
+    .india-title h2{
+        font-size:46px;
+    }
+}
+
+@media(max-width:768px){
+
+    .india-section{
+        padding:50px 25px;
+    }
+
+    .india-title h2{
+        font-size:38px;
+    }
+
+    .india-article p{
+        font-size:17px;
+    }
+
+    .dropcap:first-letter{
+        font-size:70px;
+        line-height:58px;
+    }
+
+    .india-caption{
+        font-size:15px;
+    }
+}
+/*==================================================
+                BOOK PROMOTION
+==================================================*/
+
+.books-promo{
+    width:100%;
+    background:#ffffff;
+    padding:100px 0 80px;
+}
+
+/*==============================
+        HEADER
+==============================*/
+
+.promo-header{
+    background:#d84a3d;
+    color:#ffffff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.promo-header h2{
+    font-family:"Playfair Display", Georgia, serif;
+    font-size:58px;
+    font-style:italic;
+    font-weight:700;
+    color:#ffffff;
+    margin:0;
+}
+
+.promo-header p{
+    margin-top:12px;
+    font-size:24px;
+    font-style:italic;
+    color:#ffffff;
+}
+
+/*==============================
+        HERO IMAGE
+==============================*/
+
+.promo-banner{
+    width:75%;
+    margin:55px auto;
+}
+
+.promo-banner img{
+    width:100%;
+    display:block;
+    border-radius:25px;
+}
+
+/*==============================
+        INTRODUCTION
+==============================*/
+
+.promo-intro{
+    width:72%;
+    margin:0 auto;
+}
+
+.promo-intro p{
+    font-family:Georgia, serif;
+    font-size:18px;
+    line-height:1.9;
+    text-align:justify;
+
+    color:#222222 !important;
+    opacity:1 !important;
+    visibility:visible !important;
+}
+
+.promo-intro .dropcap:first-letter{
+    float:left;
+    font-size:80px;
+    line-height:60px;
+    padding-right:10px;
+    color:#8c2d22;
+    font-family:Georgia, serif;
+    font-weight:bold;
+}
+
+/*==============================
+        BOOK GRID
+==============================*/
+
+.books-grid{
+    width:72%;
+    margin:70px auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.book-card{
+    display:flex;
+    align-items:flex-start;
+    gap:25px;
+}
+
+.book-card img{
+    width:120px;
+    border-radius:6px;
+    display:block;
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.book-info{
+    flex:1;
+}
+
+.book-info h3{
+    font-size:30px;
+    font-family:Georgia, serif;
+    color:#21356f !important;
+    margin-bottom:15px;
+}
+
+.book-info p{
+    font-size:17px;
+    line-height:1.8;
+    text-align:justify;
+
+    color:#222222 !important;
+    opacity:1 !important;
+    visibility:visible !important;
+}
+
+.book-info span{
+    display:block;
+    margin-top:18px;
+    font-weight:bold;
+    color:#6f4d2b !important;
+}
+
+/*==============================
+        ORDER BOX
+==============================*/
+
+.order-box{
+    width:72%;
+    margin:50px auto 0;
+    text-align:center;
+}
+
+.order-box h4{
+    font-size:34px;
+    color:#d84a3d !important;
+    margin-bottom:20px;
+}
+
+.order-box a{
+    display:inline-block;
+    padding:18px 60px;
+
+    background:#d84a3d;
+    color:#ffffff !important;
+
+    text-decoration:none;
+    border-radius:10px;
+
+    font-size:34px;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.order-box a:hover{
+    background:#bf392d;
+}
+
+.order-box p{
+    margin-top:18px;
+    font-size:17px;
+    color:#666666 !important;
+}
+
+/*==================================================
+    FORCE TEXT TO REMAIN VISIBLE
+==================================================*/
+
+.books-promo p,
+.books-promo h2,
+.books-promo h3,
+.books-promo h4,
+.books-promo span,
+.books-promo li{
+    color:#222222 !important;
+    opacity:1 !important;
+    visibility:visible !important;
+}
+
+.promo-header h2,
+.promo-header p,
+.order-box a{
+    color:#ffffff !important;
+}
+/*==================================================
+                MEDIA SERIES
+==================================================*/
+
+.media-series{
+
+    width:100%;
+
+    background:#ffffff;
+
+    padding:80px 60px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/*==========================
+        HEADER
+==========================*/
+
+.media-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.media-header h2{
+
+    margin:0;
+
+    font-family:"Playfair Display", Georgia, serif;
+
+    font-size:52px;
+
+    color:#b93d3d !important;
+
+    font-weight:700;
+
+}
+
+.media-header h3{
+
+    margin:15px 0 10px;
+
+    font-size:34px;
+
+    color:#555 !important;
+
+    font-weight:500;
+
+}
+
+.media-header p{
+
+    margin:0;
+
+    font-size:20px;
+
+    color:#666 !important;
+
+    font-weight:600;
+
+}
+
+/*==========================
+        LAYOUT
+==========================*/
+
+.media-wrapper{
+
+    max-width:1450px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:65% 35%;
+
+    gap:45px;
+
+    align-items:start;
+
+}
+
+/*==========================
+        LEFT COLUMN
+==========================*/
+
+.media-left{
+
+    width:100%;
+
+}
+
+.media-item{
+
+    display:flex;
+
+    gap:28px;
+
+    margin-bottom:55px;
+
+    align-items:flex-start;
+
+}
+
+.media-item img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:6px;
+
+    display:block;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.18);
+
+}
+
+.media-info{
+
+    flex:1;
+
+}
+
+.media-info h4{
+
+    margin:0 0 12px;
+
+    font-size:34px;
+
+    font-family:Georgia, serif;
+
+    color:#b93d3d !important;
+
+}
+
+.media-info em{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:#666 !important;
+
+    font-style:italic;
+
+}
+
+.media-info p{
+
+    margin:0 0 18px;
+
+    font-family:Georgia, serif;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+    color:#222 !important;
+
+    opacity:1 !important;
+
+    visibility:visible !important;
+
+}
+
+/*==========================
+        PRICE
+==========================*/
+
+.price-line{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:10px 0;
+
+    color:#333 !important;
+
+    font-size:18px;
+
+}
+
+.price-line span{
+
+    color:#333 !important;
+
+}
+
+.price-line .dots{
+
+    flex:1;
+
+    margin:0 12px;
+
+    border-bottom:2px dotted #999;
+
+}
+
+/*==========================
+        RIGHT COLUMN
+==========================*/
+
+.media-right{
+
+    position:sticky;
+
+    top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+.media-right img{
+
+    width:100%;
+
+    max-width:430px;
+
+    display:block;
+
+}
+
+/*==========================
+        ORDER
+==========================*/
+
+.order-box{
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+.order-box h3{
+
+    font-size:34px;
+
+    color:#d22f45 !important;
+
+    margin-bottom:18px;
+
+}
+
+.order-box a{
+
+    display:inline-block;
+
+    padding:15px 50px;
+
+    background:#d22f45;
+
+    color:#ffffff !important;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+}
+
+.order-box p{
+
+    margin-top:18px;
+
+    font-size:17px;
+
+    color:#666 !important;
+
+}
+
+/*==========================
+    FORCE TEXT VISIBILITY
+==========================*/
+
+.media-series h2,
+.media-series h3,
+.media-series h4,
+.media-series p,
+.media-series span,
+.media-series em,
+.media-series li{
+
+    color:#222 !important;
+
+    opacity:1 !important;
+
+    visibility:visible !important;
+
+}
+
+.media-header h2{
+
+    color:#b93d3d !important;
+
+}
+
+.media-header h3{
+
+    color:#666 !important;
+
+}
+
+.media-header p{
+
+    color:#777 !important;
+
+}
+
+.media-info h4{
+
+    color:#b93d3d !important;
+
+}
+
+.media-info em{
+
+    color:#666 !important;
+
+}
+
+.order-box h3{
+
+    color:#d22f45 !important;
+
+}
+
+.order-box a{
+
+    color:#ffffff !important;
+
+}
+
+/*==========================
+        MOBILE
+==========================*/
+
+@media (max-width:991px){
+
+    .media-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .media-right{
+
+        position:relative;
+
+        top:0;
+
+        order:-1;
+
+        margin-bottom:40px;
+
+    }
+
+    .media-item{
+
+        flex-direction:column;
+
+    }
+
+    .media-item img{
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+    .media-header h2{
+
+        font-size:40px;
+
+    }
+
+    .media-header h3{
+
+        font-size:28px;
+
+    }
+
+}
+/*=====================================================
+                    LAST PAGE
+=====================================================*/
+
+.last-page{
+    width:100%;
+    background:#ffffff;
+    padding:80px 60px;
+    position:relative;
+}
+
+/*=================================
+        CONTACT BOX
+=================================*/
+
+.contacts-box{
+    width:480px;
+    background:#ffffff;
+    border:1px solid #d5d5d5;
+    position:relative;
+    margin-bottom:35px;
+}
+
+.contacts-title{
+    position:absolute;
+    top:-22px;
+    left:18px;
+
+    background:#8f9399;
+
+    color:#ffffff !important;
+
+    padding:10px 24px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    border-radius:8px 8px 0 0;
+}
+
+.contacts-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+.contacts-table td{
+    padding:10px 18px;
+
+    font-size:18px;
+
+    color:#222 !important;
+
+    border-bottom:1px solid #ececec;
+}
+
+.contacts-table td:first-child{
+    width:50%;
+    font-style:italic;
+    color:#666 !important;
+}
+
+/*=================================
+            ISSUE DATE
+=================================*/
+
+.issue-date{
+    margin:30px 0;
+
+    color:#777 !important;
+
+    font-size:20px;
+}
+
+/*=================================
+            ADDRESS
+=================================*/
+
+.address{
+    margin-top:80px;
+}
+
+.address img{
+    width:130px;
+    display:block;
+    margin-bottom:20px;
+}
+
+.address p{
+    font-family:Georgia, serif;
+
+    font-size:21px;
+
+    line-height:1.7;
+
+    color:#222 !important;
+}
+
+/*=================================
+        PERMIT BOX
+=================================*/
+
+.permit-box{
+
+    position:absolute;
+
+    top:120px;
+
+    right:60px;
+
+    width:150px;
+
+    border:3px solid #444;
+
+    padding:15px;
+
+    text-align:center;
+
+    background:#fff;
+}
+
+.permit-box h2{
+
+    margin:10px 0;
+
+    letter-spacing:4px;
+
+    color:#222 !important;
+}
+
+.permit-box p{
+
+    color:#222 !important;
+
+    font-size:16px;
+}
+
+/*=================================
+        BOTTOM AD
+=================================*/
+
+.bottom-ad{
+
+    margin-top:120px;
+
+    background:#ededed;
+
+    padding:60px;
+
+    display:grid;
+
+    grid-template-columns:220px 1fr 320px;
+
+    gap:45px;
+
+    align-items:start;
+
+}
+
+/* BOOK */
+
+.book{
+    position:relative;
+}
+
+.book img:first-child{
+    width:200px;
+    display:block;
+}
+
+.new-badge{
+    position:absolute;
+    top:-20px;
+    right:-25px;
+    width:90px;
+}
+
+/* BOOK INFO */
+
+.book-info{
+    width:100%;
+}
+
+.book-info h2{
+
+    margin-bottom:20px;
+
+    font-family:Georgia, serif;
+
+    font-size:32px;
+
+    color:#222 !important;
+}
+
+.book-info p{
+
+    font-family:Georgia, serif;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#222 !important;
+
+    text-align:justify;
+}
+
+.price{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#8c2d22 !important;
+}
+
+/* ORDER */
+
+.order-box{
+    width:100%;
+}
+
+.order-box h3{
+
+    font-size:28px;
+
+    color:#d21d24 !important;
+
+    margin-bottom:20px;
+}
+
+.phone{
+
+    background:#e42028;
+
+    color:#ffffff !important;
+
+    text-align:center;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+}
+
+.order-box h2{
+
+    color:#d21d24 !important;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+}
+
+.order-box p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#444 !important;
+}
+
+/*=================================
+        FORCE TEXT VISIBLE
+=================================*/
+
+.last-page h1,
+.last-page h2,
+.last-page h3,
+.last-page h4,
+.last-page h5,
+.last-page p,
+.last-page td,
+.last-page span,
+.last-page strong{
+
+    color:#222 !important;
+
+    opacity:1 !important;
+
+    visibility:visible !important;
+
+    display:inherit;
+}
+
+.contacts-title,
+.phone{
+
+    color:#ffffff !important;
+}
+
+/*=================================
+        RESPONSIVE
+=================================*/
+
+@media(max-width:1000px){
+
+    .bottom-ad{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contacts-box{
+
+        width:100%;
+
+    }
+
+    .permit-box{
+
+        position:relative;
+
+        top:0;
+
+        right:0;
+
+        margin:40px auto;
+
+    }
+
+}

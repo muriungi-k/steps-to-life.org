@@ -1,0 +1,945 @@
+/*==================================================
+    STEPS TO LIFE
+    PROFESSIONAL NAVIGATION BAR
+==================================================*/
+
+:root{
+
+    --primary:#0056d6;
+    --secondary:#00a8ff;
+    --dark:#08142b;
+    --light:#ffffff;
+    --gray:#f5f7fb;
+    --shadow:0 10px 35px rgba(0,0,0,.12);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/*==============================
+NAVBAR
+==============================*/
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 6%;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    transition:.4s;
+
+    z-index:99999;
+
+}
+
+.navbar.scrolled{
+
+    background:#ffffff;
+
+    box-shadow:var(--shadow);
+
+}
+
+/*==============================
+LOGO
+==============================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+}
+
+.logo h2{
+
+    font-size:30px;
+
+    font-weight:800;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.navbar.scrolled .logo h2{
+
+    color:var(--primary);
+
+}
+
+/*==============================
+MENU
+==============================*/
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:32px;
+
+}
+
+.nav-menu li{
+
+    position:relative;
+
+}
+
+.nav-menu li a{
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.navbar.scrolled .nav-menu li a{
+
+    color:#222;
+
+}
+
+/*==============================
+UNDERLINE
+==============================*/
+
+.nav-menu li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transition:.35s;
+
+}
+
+.nav-menu li a:hover::after{
+
+    width:100%;
+
+}
+
+.nav-menu li a:hover{
+
+    color:var(--secondary);
+
+}
+
+.navbar.scrolled .nav-menu li a:hover{
+
+    color:var(--primary);
+
+}
+
+/*==============================
+ACTIVE PAGE
+==============================*/
+
+.nav-menu li.active a{
+
+    color:#00d4ff;
+
+}
+
+.navbar.scrolled .nav-menu li.active a{
+
+    color:var(--primary);
+
+}
+
+.nav-menu li.active a::after{
+
+    width:100%;
+
+}
+
+/*==============================
+RIGHT SIDE
+==============================*/
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.nav-icon{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.navbar.scrolled .nav-icon{
+
+    color:#333;
+
+}
+
+.nav-icon:hover{
+
+    color:var(--secondary);
+
+}
+/*==============================
+DROPDOWN MENU
+==============================*/
+
+.dropdown{
+
+    position:absolute;
+
+    top:65px;
+
+    left:0;
+
+    min-width:240px;
+
+    background:#ffffff;
+
+    border-radius:14px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:.35s ease;
+
+    overflow:hidden;
+
+    z-index:999;
+
+}
+
+.nav-menu li:hover .dropdown{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.dropdown li{
+
+    width:100%;
+
+}
+
+.dropdown li a{
+
+    display:block;
+
+    color:#222 !important;
+
+    padding:16px 22px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.dropdown li a:hover{
+
+    background:#f5f8ff;
+
+    color:var(--primary) !important;
+
+    padding-left:28px;
+
+}
+
+.dropdown li a::after{
+
+    display:none;
+
+}
+
+/*==============================
+BUTTONS
+==============================*/
+
+.nav-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.study-btn{
+
+    background:linear-gradient(
+        135deg,
+        #0056d6,
+        #00b8ff
+    );
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(0,86,214,.35);
+
+}
+
+.study-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(0,86,214,.45);
+
+}
+
+.donate-btn{
+
+    background:#ffb400;
+
+    color:#111;
+
+    box-shadow:0 10px 25px rgba(255,180,0,.35);
+
+}
+
+.donate-btn:hover{
+
+    background:#ffc93a;
+
+    transform:translateY(-3px);
+
+}
+
+/*==============================
+SEARCH ICON
+==============================*/
+
+.search-btn{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.navbar.scrolled .search-btn{
+
+    background:#eef4ff;
+
+    color:#222;
+
+}
+
+.search-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:rotate(15deg);
+
+}
+
+/*==============================
+SOCIAL ICONS
+==============================*/
+
+.nav-social{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+.nav-social a{
+
+    width:38px;
+
+    height:38px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.12);
+
+    transition:.35s;
+
+}
+
+.navbar.scrolled .nav-social a{
+
+    color:#333;
+
+    background:#eef4ff;
+
+}
+
+.nav-social a:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:translateY(-4px);
+
+}
+
+/*==============================
+HAMBURGER
+==============================*/
+
+.menu-toggle{
+
+    display:none;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    gap:6px;
+
+}
+
+.menu-toggle span{
+
+    width:30px;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    transition:.35s;
+
+}
+
+.navbar.scrolled .menu-toggle span{
+
+    background:#222;
+
+}
+/*==================================================
+    PART 3
+    MOBILE RESPONSIVE NAVIGATION
+==================================================*/
+
+/*==============================
+MOBILE MENU
+==============================*/
+
+@media (max-width:991px){
+
+    .navbar{
+    
+    padding:0 30px;
+    
+    height:80px;
+    
+    }
+    
+    .logo h2{
+    
+    font-size:24px;
+    
+    }
+    
+    .menu-toggle{
+    
+    display:flex;
+    
+    z-index:10001;
+    
+    }
+    
+    .nav-menu{
+    
+    position:fixed;
+    
+    top:0;
+    
+    right:-100%;
+    
+    width:320px;
+    
+    height:100vh;
+    
+    background:#08142b;
+    
+    display:flex;
+    
+    flex-direction:column;
+    
+    justify-content:flex-start;
+    
+    align-items:flex-start;
+    
+    padding:110px 35px;
+    
+    gap:28px;
+    
+    transition:.45s;
+    
+    box-shadow:-10px 0 40px rgba(0,0,0,.25);
+    
+    overflow-y:auto;
+    
+    }
+    
+    .nav-menu.active{
+    
+    right:0;
+    
+    }
+    
+    .nav-menu li{
+    
+    width:100%;
+    
+    }
+    
+    .nav-menu li a{
+    
+    color:#fff;
+    
+    font-size:18px;
+    
+    display:block;
+    
+    width:100%;
+    
+    padding:10px 0;
+    
+    }
+    
+    .dropdown{
+    
+    position:relative;
+    
+    top:10px;
+    
+    left:0;
+    
+    opacity:1;
+    
+    visibility:visible;
+    
+    transform:none;
+    
+    display:none;
+    
+    width:100%;
+    
+    background:rgba(255,255,255,.06);
+    
+    box-shadow:none;
+    
+    border-radius:10px;
+    
+    margin-top:10px;
+    
+    }
+    
+    .nav-menu li.open .dropdown{
+    
+    display:block;
+    
+    }
+    
+    .dropdown li a{
+    
+    color:#fff !important;
+    
+    padding:14px 18px;
+    
+    }
+    
+    .nav-right{
+    
+    display:none;
+    
+    }
+    
+    }
+    
+    /*==============================
+    TABLETS
+    ==============================*/
+    
+    @media(max-width:768px){
+    
+    .navbar{
+    
+    padding:0 20px;
+    
+    }
+    
+    .logo img{
+    
+    width:45px;
+    
+    height:45px;
+    
+    }
+    
+    .logo h2{
+    
+    font-size:22px;
+    
+    }
+    
+    .nav-menu{
+    
+    width:280px;
+    
+    }
+    
+    }
+    
+    /*==============================
+    PHONES
+    ==============================*/
+    
+    @media(max-width:480px){
+    
+    .navbar{
+    
+    height:75px;
+    
+    padding:0 16px;
+    
+    }
+    
+    .logo h2{
+    
+    font-size:20px;
+    
+    }
+    
+    .logo img{
+    
+    width:40px;
+    
+    height:40px;
+    
+    }
+    
+    .nav-menu{
+    
+    width:100%;
+    
+    padding:90px 25px;
+    
+    }
+    
+    .nav-menu li a{
+    
+    font-size:17px;
+    
+    }
+    
+    }
+    /*==================================================
+    PART 4
+    FINAL POLISH & ANIMATIONS
+==================================================*/
+
+/* Navbar animation */
+
+@keyframes navbarFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.navbar{
+
+    animation:navbarFade .8s ease;
+
+}
+
+/* Hover glow */
+
+.nav-menu li a:hover{
+
+    text-shadow:
+
+    0 0 8px rgba(0,168,255,.6);
+
+}
+
+/* Sticky shadow */
+
+.navbar.scrolled{
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.12);
+
+}
+
+/* Logo animation */
+
+.logo img{
+
+    transition:.5s;
+
+}
+
+.logo:hover img{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
+/* Button transitions */
+
+.nav-btn,
+
+.study-btn,
+
+.donate-btn{
+
+    transition:
+
+    transform .35s,
+
+    box-shadow .35s,
+
+    background .35s;
+
+}
+
+/* Accessibility */
+
+.nav-menu li a:focus,
+
+.dropdown li a:focus,
+
+.study-btn:focus,
+
+.donate-btn:focus{
+
+    outline:3px solid #00b8ff;
+
+    outline-offset:4px;
+
+}
+
+/* Better dropdown animation */
+
+.dropdown{
+
+    transition:
+
+    opacity .35s,
+
+    transform .35s,
+
+    visibility .35s;
+
+}
+
+/* Prevent text selection */
+
+.navbar{
+
+    user-select:none;
+
+}
+
+/* Performance */
+
+.navbar,
+
+.dropdown,
+
+.nav-menu,
+
+.study-btn,
+
+.donate-btn{
+
+    will-change:transform;
+
+}
+/*=====================================================
+    CART COUNTER
+=====================================================*/
+
+
+#cart-count{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    width:22px;
+
+    height:22px;
+
+
+    margin-left:6px;
+
+
+    border-radius:50%;
+
+
+    background:#4fc3ff;
+
+    color:white;
+
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+}
+
+/* End of navbar.css */

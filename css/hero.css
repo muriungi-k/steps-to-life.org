@@ -1,0 +1,358 @@
+/*======================================================
+STEPS TO LIFE
+HERO.CSS
+======================================================*/
+
+
+/*======================================================
+HERO SECTION
+======================================================*/
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:radial-gradient(circle at center,#07111d,#02050b,#000);
+
+}
+
+
+/*======================================================
+3D EARTH
+======================================================*/
+
+#earth-container{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:1;
+
+}
+
+
+/*======================================================
+OVERLAY
+======================================================*/
+
+.overlay{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.35)
+    );
+
+    z-index:2;
+
+}
+
+
+/*======================================================
+HERO CONTENT
+======================================================*/
+
+.hero-content{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:90%;
+
+    max-width:1200px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    z-index:10;
+
+    opacity:0;
+
+    animation:heroReveal 2s ease forwards;
+
+    animation-delay:1.5s;
+
+}
+
+
+/*======================================================
+TITLE
+======================================================*/
+
+.hero-content h1{
+
+    font-size:90px;
+
+    font-weight:800;
+
+    color:#ffffff;
+
+    text-shadow:
+
+    0 0 15px #4fc3ff,
+
+    0 0 35px #4fc3ff,
+
+    0 0 70px #4fc3ff;
+
+    animation:heroGlow 4s infinite alternate;
+
+}
+
+
+/*======================================================
+SUBTITLE
+======================================================*/
+
+.hero-content>p{
+
+    margin-top:20px;
+
+    font-size:24px;
+
+    letter-spacing:6px;
+
+    color:#ffffff;
+
+}
+
+
+/*======================================================
+VERSE
+======================================================*/
+
+.hero-verse{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    font-style:italic;
+
+    color:#d8ecff;
+
+    opacity:.9;
+
+}
+
+
+/*======================================================
+BUTTON
+======================================================*/
+
+.hero-btn{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:18px 42px;
+
+    border-radius:50px;
+
+    background:#4fc3ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    box-shadow:0 0 25px rgba(79,195,255,.5);
+
+    transition:.35s;
+
+}
+
+.hero-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:white;
+
+    color:#07111d;
+
+    box-shadow:0 0 40px rgba(79,195,255,.8);
+
+}
+
+
+/*======================================================
+SCROLL INDICATOR
+======================================================*/
+
+.scroll-indicator{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:20;
+
+    cursor:pointer;
+
+}
+
+.scroll-indicator span{
+
+    display:block;
+
+    width:34px;
+
+    height:56px;
+
+    border:2px solid white;
+
+    border-radius:25px;
+
+    position:relative;
+
+}
+
+.scroll-indicator span::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:8px;
+
+    width:6px;
+
+    height:12px;
+
+    transform:translateX(-50%);
+
+    border-radius:20px;
+
+    background:white;
+
+    animation:scrollMouse 2s infinite;
+
+}
+
+
+/*======================================================
+ANIMATIONS
+======================================================*/
+
+@keyframes heroReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:translate(-50%,-40%);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translate(-50%,-50%);
+
+    }
+
+}
+
+@keyframes heroGlow{
+
+    from{
+
+        text-shadow:
+
+        0 0 15px #4fc3ff,
+
+        0 0 30px #4fc3ff,
+
+        0 0 60px #4fc3ff;
+
+    }
+
+    to{
+
+        text-shadow:
+
+        0 0 20px white,
+
+        0 0 50px #4fc3ff,
+
+        0 0 90px #4fc3ff;
+
+    }
+
+}
+
+@keyframes scrollMouse{
+
+    0%{
+
+        opacity:1;
+
+        top:8px;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        top:28px;
+
+    }
+
+}
+
+
+/*======================================================
+END OF HERO.CSS
+======================================================*/

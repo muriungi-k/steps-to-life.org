@@ -1,0 +1,387 @@
+/*====================================================
+                ABOUT PAGE
+====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#010814;
+    color:#fff;
+    overflow-x:hidden;
+
+}
+
+/*====================================================
+        FULL PAGE BACKGROUND IMAGE
+====================================================*/
+
+.page-background{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        rgba(0,8,18,.28),
+        rgba(0,18,35,.30)
+    ),
+    url("../images/about-background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    z-index:-100;
+
+}
+
+/*====================================================
+                HERO
+====================================================*/
+
+.about-hero{
+
+    min-height:75vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:140px 30px 90px;
+
+}
+
+.about-hero h1{
+
+    font-size:4.6rem;
+
+    font-weight:800;
+
+    color:#fff;
+
+    text-shadow:
+    0 0 12px #41c9ff,
+    0 0 30px #41c9ff,
+    0 0 60px #41c9ff;
+
+}
+
+.about-hero p{
+
+    margin-top:30px;
+
+    font-size:1.35rem;
+
+    color:#d9eeff;
+
+    max-width:900px;
+
+}
+
+/*====================================================
+            MAIN CONTENT
+====================================================*/
+
+.about-sections{
+
+    width:100%;
+    padding:90px 8%;
+
+}
+
+/*====================================================
+            GLASS CARD
+====================================================*/
+
+.about-card{
+
+    width:100%;
+
+    margin-bottom:70px;
+
+    padding:70px;
+
+    border-radius:25px;
+
+    background:rgba(5,15,30,.42);
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border:1px solid rgba(79,195,255,.25);
+
+    box-shadow:
+    0 15px 45px rgba(0,0,0,.45);
+
+}
+
+.about-card h2{
+
+    font-size:3rem;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    color:#fff;
+
+    text-shadow:
+    0 0 10px #41c9ff,
+    0 0 25px #41c9ff;
+
+}
+
+.about-card p{
+
+    font-size:1.25rem;
+
+    line-height:2;
+
+    color:#efefef;
+
+    text-align:justify;
+
+}
+
+/*====================================================
+            LEADER SECTION
+====================================================*/
+
+.leader-section{
+
+    width:100%;
+
+    margin-bottom:70px;
+
+    padding:80px 60px;
+
+    border-radius:25px;
+
+    background:rgba(5,15,30,.42);
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border:1px solid rgba(79,195,255,.25);
+
+    box-shadow:
+    0 15px 45px rgba(0,0,0,.45);
+
+    text-align:center;
+
+}
+
+/* Titles */
+
+.leader-section h2{
+
+    font-size:3.2rem;
+
+    color:#fff;
+
+    margin-bottom:50px;
+
+    text-shadow:
+    0 0 12px #41c9ff,
+    0 0 30px #41c9ff;
+
+}
+
+/*====================================================
+        IMAGE (PERFECTLY CENTERED)
+====================================================*/
+
+.leader-image{
+
+    display:block;
+
+    width:300px;
+    height:300px;
+
+    margin:0 auto 40px auto;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #49c7ff;
+
+    box-shadow:
+    0 0 20px #49c7ff,
+    0 0 60px rgba(73,199,255,.60);
+
+    transition:.4s;
+
+}
+
+.leader-image:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*====================================================
+            NAME
+====================================================*/
+
+.leader-section h3{
+
+    font-size:2.4rem;
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+}
+
+/*====================================================
+            DESCRIPTION
+====================================================*/
+
+.leader-section p{
+
+    width:90%;
+    max-width:900px;
+
+    margin:0 auto;
+
+    font-size:1.2rem;
+
+    line-height:2;
+
+    color:#ececec;
+
+}
+
+/*====================================================
+                HISTORY
+====================================================*/
+
+.history-content{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.history-content p{
+
+    font-size:1.2rem;
+
+    line-height:2;
+
+    color:#efefef;
+
+    text-align:justify;
+
+}
+
+/*====================================================
+            RESPONSIVE
+====================================================*/
+
+@media(max-width:992px){
+
+.about-hero h1{
+
+    font-size:3rem;
+
+}
+
+.about-card{
+
+    padding:40px;
+
+}
+
+.leader-section{
+
+    padding:45px 25px;
+
+}
+
+.leader-image{
+
+    width:230px;
+    height:230px;
+
+}
+
+.about-card h2,
+.leader-section h2{
+
+    font-size:2.3rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-hero{
+
+    min-height:60vh;
+
+    padding-top:120px;
+
+}
+
+.about-hero h1{
+
+    font-size:2.3rem;
+
+}
+
+.about-hero p{
+
+    font-size:1rem;
+
+}
+
+.about-sections{
+
+    padding:50px 20px;
+
+}
+
+.about-card{
+
+    padding:30px;
+
+}
+
+.about-card p,
+.leader-section p{
+
+    font-size:1rem;
+
+}
+
+.leader-image{
+
+    width:180px;
+    height:180px;
+
+}
+
+}

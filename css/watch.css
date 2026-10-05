@@ -1,0 +1,499 @@
+.watch-hero{
+    height:100vh;
+
+    background:transparent;
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.watch-overlay{
+    max-width:900px;
+}
+
+.watch-overlay h1{
+    font-size:6rem;
+    color:white;
+
+    text-shadow:
+        0 0 20px #4fc3ff,
+        0 0 40px #4fc3ff,
+        0 0 80px #4fc3ff;
+}
+
+.watch-overlay p{
+    font-size:1.5rem;
+    color:#d8e8ff;
+
+    margin-top:30px;
+    margin-bottom:40px;
+}
+
+.watch-btn{
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    background:#4fc3ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    box-shadow:0 0 25px #4fc3ff;
+
+    transition:.4s;
+}
+
+.watch-btn:hover{
+    transform:translateY(-5px);
+
+    box-shadow:0 0 50px #4fc3ff;
+}
+.featured-video{
+    padding:120px 50px;
+    background:#020b18;
+    text-align:center;
+}
+
+.featured-video h2{
+    color:white;
+    font-size:3rem;
+    margin-bottom:50px;
+
+    text-shadow:
+        0 0 15px #4fc3ff,
+        0 0 35px #4fc3ff;
+}
+
+.video-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.video-container iframe{
+    width:100%;
+    height:600px;
+
+    border:none;
+    border-radius:20px;
+
+    box-shadow:
+        0 0 30px rgba(79,195,255,.4);
+}
+.youtube-channel{
+    padding:120px 50px;
+    background:#051320;
+    text-align:center;
+}
+
+.youtube-channel h2{
+    color:white;
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+.youtube-channel p{
+    max-width:800px;
+    margin:0 auto 50px auto;
+
+    color:#d0d0d0;
+    font-size:1.3rem;
+    line-height:2;
+}
+.radio-ministry{
+    padding:120px 50px;
+    background:#020b18;
+    text-align:center;
+}
+
+.radio-ministry h2{
+    font-size:3rem;
+    color:white;
+    margin-bottom:30px;
+
+    text-shadow:
+        0 0 15px #4fc3ff,
+        0 0 35px #4fc3ff;
+}
+
+.radio-intro{
+    max-width:800px;
+    margin:0 auto 70px auto;
+
+    color:#d0d0d0;
+    font-size:1.2rem;
+    line-height:2;
+}
+
+.radio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:40px;
+
+    max-width:1200px;
+    margin:auto;
+}
+
+.radio-card{
+    background:rgba(255,255,255,0.05);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(79,195,255,.25);
+
+    transition:.4s;
+}
+
+.radio-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 0 30px rgba(79,195,255,.45);
+}
+
+.radio-card h3{
+    color:#4fc3ff;
+    font-size:1.8rem;
+    margin-bottom:20px;
+}
+
+.radio-card p{
+    color:#d0d0d0;
+    line-height:1.8;
+}
+.sermon-categories{
+    padding:120px 50px;
+    background:#051320;
+    text-align:center;
+}
+
+.sermon-categories h2{
+    font-size:3rem;
+    color:white;
+    margin-bottom:70px;
+
+    text-shadow:
+        0 0 15px #4fc3ff,
+        0 0 35px #4fc3ff;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+    max-width:1100px;
+    margin:auto;
+}
+
+.category-card{
+    padding:40px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(79,195,255,.25);
+
+    color:white;
+
+    font-size:1.4rem;
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+
+    color:#4fc3ff;
+
+    box-shadow:
+        0 0 30px rgba(79,195,255,.45);
+}
+.podcast-library{
+    padding:120px 50px;
+    background:#020b18;
+    text-align:center;
+}
+
+.podcast-library h2{
+    font-size:3rem;
+    color:white;
+    margin-bottom:70px;
+
+    text-shadow:
+        0 0 15px #4fc3ff,
+        0 0 35px #4fc3ff;
+}
+
+.podcast-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+
+    max-width:1200px;
+    margin:auto;
+}
+
+.podcast-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(79,195,255,.25);
+
+    border-radius:20px;
+    padding:40px;
+
+    transition:.4s;
+}
+
+.podcast-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 0 30px rgba(79,195,255,.45);
+}
+
+.podcast-card h3{
+    color:#4fc3ff;
+    margin-bottom:20px;
+}
+
+.podcast-card p{
+    color:#d0d0d0;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.podcast-card button{
+    padding:14px 30px;
+
+    border:none;
+    border-radius:40px;
+
+    background:#4fc3ff;
+    color:white;
+
+    cursor:pointer;
+
+    box-shadow:0 0 20px #4fc3ff;
+}
+.media-library{
+    padding:120px 50px;
+    background:#051320;
+    text-align:center;
+}
+
+.media-library h2{
+    font-size:3rem;
+    color:white;
+    margin-bottom:70px;
+}
+
+.media-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:40px;
+
+    max-width:1200px;
+    margin:auto;
+}
+
+.media-card{
+    background:rgba(255,255,255,.05);
+
+    border-radius:20px;
+    padding:40px;
+
+    border:1px solid rgba(79,195,255,.25);
+
+    transition:.4s;
+}
+
+.media-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 0 30px rgba(79,195,255,.45);
+}
+
+.media-card h3{
+    color:#4fc3ff;
+    margin-bottom:20px;
+}
+
+.media-card p{
+    color:#d0d0d0;
+    line-height:1.8;
+}
+.watch-cta{
+    padding:150px 40px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.9),
+            rgba(0,20,40,.95)
+        );
+
+    text-align:center;
+}
+
+.watch-cta h2{
+    color:white;
+    font-size:3rem;
+
+    max-width:1000px;
+    margin:auto;
+
+    text-shadow:
+        0 0 20px #4fc3ff,
+        0 0 40px #4fc3ff;
+}
+
+.watch-cta p{
+    color:#d0d0d0;
+    margin:40px 0;
+    font-size:1.5rem;
+}
+/*=====================================================
+    GLOBAL TRANSPARENT BACKGROUND
+=====================================================*/
+body{
+
+    background: url("../images/watch-background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/*=====================================================
+    MAKE ALL SECTIONS TRANSPARENT
+=====================================================*/
+
+.featured-video,
+.youtube-channel,
+.radio-ministry,
+.sermon-categories,
+.podcast-library,
+.media-library,
+.watch-cta{
+
+    position:relative;
+
+    background:transparent;
+
+    overflow:hidden;
+}
+
+
+/*=====================================================
+    GLASS OVERLAY (NO BLUR)
+=====================================================*/
+
+.featured-video::before,
+.youtube-channel::before,
+.radio-ministry::before,
+.sermon-categories::before,
+.podcast-library::before,
+.media-library::before,
+.watch-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(255,255,255,.03);
+
+    border-top:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    pointer-events:none;
+}
+
+
+/*=====================================================
+    KEEP CONTENT ABOVE OVERLAY
+=====================================================*/
+
+.featured-video>*,
+.youtube-channel>*,
+.radio-ministry>*,
+.sermon-categories>*,
+.podcast-library>*,
+.media-library>*,
+.watch-cta>*{
+
+    position:relative;
+    z-index:2;
+}
+
+
+/*=====================================================
+    GLASS CARDS
+=====================================================*/
+
+.video-container,
+.radio-card,
+.category-card,
+.podcast-card,
+.media-card{
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.30),
+        0 0 25px rgba(79,195,255,.18);
+}
+
+
+/*=====================================================
+    HOVER EFFECT
+=====================================================*/
+
+.radio-card:hover,
+.category-card:hover,
+.podcast-card:hover,
+.media-card:hover{
+
+    box-shadow:
+        0 20px 50px rgba(79,195,255,.35);
+
+    border-color:rgba(79,195,255,.45);
+}
+/* Responsive featured YouTube player. */
+.video-container iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+#featured-video { scroll-margin-top: 115px; }
+.video-fallback { margin-top: 20px; }
+.video-fallback a { color: #d8ecff; text-decoration: underline; text-underline-offset: 4px; }
+.video-presentation-link { display: block; color: white; text-decoration: none; }
+.video-presentation-link:focus-visible { outline: 3px solid #efc653; outline-offset: 5px; }
+@media(max-width:600px) { .featured-video { padding: 65px 5%; } }

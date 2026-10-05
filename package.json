@@ -1,0 +1,10 @@
+{
+  "name": "steps-to-life-website",
+  "private": true,
+  "scripts": {
+    "test": "node tests/site-actions.cjs"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.12"
+  }
+}
